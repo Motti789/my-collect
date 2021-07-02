@@ -7,7 +7,7 @@ def my_collect(collection)
       collection <<  yield(collection[i])
         i += 1
     end
-    students.split(" ").first.upcase
+    collection
 end
 
 
