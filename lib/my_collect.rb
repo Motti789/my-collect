@@ -1,13 +1,13 @@
 require "pry"
 def my_collect(collection)
-    collection = []
+    array_of_names = []
     #binding.pry
     i = 0
     while i < collection.length
-      collection <<  yield(collection[i])
+      array_of_names <<  yield(collection[i])
         i += 1
     end
-    collection
+    array_of_names
 end
 
 
